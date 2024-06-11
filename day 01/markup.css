@@ -1,0 +1,116 @@
+header{
+    width: 1000px;
+    border: 1px solid #222;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: yellow;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: papayawhip;
+}
+
+.menu-container{
+    display: flex;
+    background-color: yellow;
+}
+
+.menu-container:last-child{
+    background-color: orange;
+}
+
+a{
+    display: block;
+    padding: 4px 12px;
+    text-decoration: none;
+    color: #222;
+}
+
+.wrap{
+    display: flex;
+    /* flex에는 기본적으로 stretch 속성이 들어가 있어서 자식 요소의 크기를 늘림 */
+    margin: 0 auto;
+    width: 1000px;
+    gap: 8px;
+    margin-bottom: 8px;
+    align-items: flex-start;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+article{
+    border: 1px solid #222;
+    padding: 12px;
+}
+
+article > h2{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: papayawhip;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+.wrap p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+aside{
+    width: 360px;
+    padding: 12px;
+    border: 1px solid #222;
+}
+
+aside > h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input{
+    margin-top: 8px;
+}
+
+footer{
+    border: 1px solid #222;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: papayawhip;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.aside-inner-box{
+    background-color: grey;
+    margin-top: 8px;
+}
+
+aside h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
