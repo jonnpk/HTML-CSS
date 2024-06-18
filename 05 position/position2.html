@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        body{
+            height: 5000px;
+        }
+        
+        header {
+            height: 80px;
+            background-color: rgb(135, 255, 23);
+            padding: 0 32px;
+
+            position: fixed;
+            /* 브라우저 뷰를 기준으로 정렬
+                유저가 보는 화면에 고정시켜야 할 때 사용
+                헤더 밑에 컨텐츠를 정렬하기 위해서는
+                padding top을 fixed 컨텐츠 높이만큼 줘야 함 */
+            top: 0;
+            
+            width: 100%;
+            box-sizing: border-box;
+            /* fixed를 주면 위 속성들을 줘야 함 */
+
+        }
+
+        .header-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        nav{
+            background-color: rgb(255, 255, 255);
+            height: 16px;
+            width: 800px;
+        }
+
+        .icons{
+            background-color: rgb(255, 255, 255);
+            height: 48px;
+            width: 200px;
+
+        }
+
+        h1{
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>JONN</h1>
+            <nav>
+
+            </nav>
+            <div class="icons">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+    </div>
+</body>
+</html>
