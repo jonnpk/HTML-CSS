@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .margin-section{
+            height: 1000px;
+        }
+
+        .area{
+            display: flex;
+            gap: 16px;
+        }
+
+        .text-box{
+            margin-bottom: 500px;
+        }
+
+        .text-box > h2{
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        img{
+            display: block;
+            width: 100%;
+            /* 이미지를 쓸 때 항상 넣어주는 속성 */
+        }
+
+        /* .sticky-img{
+            /* position: sticky;
+            top: 0;
+            height: 100vh;
+            object-fit: cover;
+         } */
+            /* 이미지 일부가 잘리더라도 영역만큼 가득 채울 때 */
+
+        .area > figure{
+            width: 50%;
+            flex-shrink: 0;
+
+
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            /* 이미지가 잘리지 않게 영역 안에 세로로 가운데 정렬할 때 */
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="margin-section"></section>
+    <div class="area">
+        <figure>
+            <img src="../img/NASA_logo.png" class="sticky-img" alt="NASA">
+        </figure>
+        <div class="text-container">
+            <div class="text-box">
+                <h2>WELCOME!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam eum quibusdam amet optio velit asperiores earum cupiditate, illo quisquam itaque recusandae odit tempora. Suscipit modi natus asperiores iste quidem?</p>
+            </div>
+            <div class="text-box">
+                <h2>WELCOME!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam eum quibusdam amet optio velit asperiores earum cupiditate, illo quisquam itaque recusandae odit tempora. Suscipit modi natus asperiores iste quidem?</p>
+            </div>
+            <div class="text-box">
+                <h2>WELCOME!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam eum quibusdam amet optio velit asperiores earum cupiditate, illo quisquam itaque recusandae odit tempora. Suscipit modi natus asperiores iste quidem?</p>
+            </div>
+            <div class="text-box">
+                <h2>WELCOME!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam eum quibusdam amet optio velit asperiores earum cupiditate, illo quisquam itaque recusandae odit tempora. Suscipit modi natus asperiores iste quidem?</p>
+            </div>
+            <div class="text-box">
+                <h2>WELCOME!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam eum quibusdam amet optio velit asperiores earum cupiditate, illo quisquam itaque recusandae odit tempora. Suscipit modi natus asperiores iste quidem?</p>
+            </div>
+            <div class="text-box">
+                <h2>WELCOME!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam eum quibusdam amet optio velit asperiores earum cupiditate, illo quisquam itaque recusandae odit tempora. Suscipit modi natus asperiores iste quidem?</p>
+            </div>
+            <div class="text-box">
+                <h2>WELCOME!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam eum quibusdam amet optio velit asperiores earum cupiditate, illo quisquam itaque recusandae odit tempora. Suscipit modi natus asperiores iste quidem?</p>
+            </div>
+            <div class="text-box">
+                <h2>WELCOME!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam eum quibusdam amet optio velit asperiores earum cupiditate, illo quisquam itaque recusandae odit tempora. Suscipit modi natus asperiores iste quidem?</p>
+            </div>
+            <div class="text-box">
+                <h2>WELCOME!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam eum quibusdam amet optio velit asperiores earum cupiditate, illo quisquam itaque recusandae odit tempora. Suscipit modi natus asperiores iste quidem?</p>
+            </div>
+        </div>
+    </div>
+    <section class="margin-section"></section>
+</body>
+</html>

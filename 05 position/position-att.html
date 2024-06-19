@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid #222;
+        }
+
+        .box{
+            width: 40px;
+            height: 40px;
+            background-color: green;
+            position: absolute;
+
+            /* left: 100%;
+            margin-left: 16px; */
+            /* 직관적이지만 고전적인 방법 */
+
+            left: calc(100% + 16px);
+            /* calculator: 서로 다른 단위의 값을
+                연산해주는 함수 */
+        }
+
+        .fire-box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="fire-box"></div>
+    </div>
+</body>
+</html>
