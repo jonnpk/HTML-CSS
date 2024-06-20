@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #222;
+            background-color: pink;
+
+            font-size: 24px;
+            font-weight: bold;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            opacity: 0.8;
+        }
+
+        .origin {
+            background-color: #22222280;
+        }
+
+        .trans {
+            transform: translate(100px, 100px);
+            /* transform: 애니메이션이나 인터렉션을 위한 속성 */
+            
+            /* translate: 이동시키는 속성
+                translate(x, y) */
+            /* 
+                position 속성과의 차이점
+                1. 중점
+                    position: 부모 컨테이너 기준
+                    transform: 자기 기준
+             */
+            transform: translate(100%, 100%);
+            /* 자신의 크기만큼 좌표를 이동함
+                ex. 가로 156px일 때 translateX(100%)일 경우
+                    가로로 156px 이동함 */
+
+            transform: scale(400%);
+            /* 
+                scale: 크기를 변경하는 속성
+                scale(비율) / scale(x, y): x축과 y비율 각각 줄 수 있음
+                픽셀 등의 고정값은 쓸 수 없고 백분율 값만 가능
+                컨텐츠의 내용까지 동일하게 크기가 늘어나서 보임
+                흐름에 영향을 주지 않는다
+
+                *width와 height로 크기를 늘리는 경우에는
+                박스의 크기만 늘어나고 컨텐츠의 크기는 원래 그대로 있음
+                흐름에 영향을 준다
+
+                *애니메이션 효과를 줬을 때 두 방식은 확연히 차이가 남
+             */
+
+            transform: rotate(45deg);
+            /* rotate: 회전 속성
+                rotate(각도 = deg) */
+
+            transform: skewX(45deg) skewY(45deg);
+            /* skew: 왜곡시키는 속성
+                skewX: X축 고정시키고 왜곡
+                skewY: Y축 고정시키고 왜곡
+                사용하기 까다로운 속성.. */
+
+            transform: rotate(45deg);
+            transform-origin: top left;
+            transform-origin: 250px center;
+            /* 트랜스폼이 어디를 기준으로 작동될 지 정해주는 속성
+                기본값: center(x), center(y)
+                컨텐츠 박스 바깥 쪽에 오리진을 둘 수도 있음 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box origin">
+        원래 위치
+    </div>
+    <div class="box trans">
+        BOX
+    </div>
+</body>
+</html>
