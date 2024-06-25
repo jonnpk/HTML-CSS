@@ -10,10 +10,34 @@
             height: 200px;
             background-color: pink;
 
+            
             transition: 0.5s;
+            /* transition: 변화하는 값을 연결시키는 과정을 구현 */
             /* = transition-duration: 0.5s; */
-            transition-property: ;
-            t
+            /* height: 기본 속성이 auto이기 때문에 변화 단계 수치만
+                설정하면 transition 작동하지 않음
+                ex. auto -> 500 : 작동 X
+                display: 첫 단계를 none으로 설정하면 작동하지 않음 */
+
+            transition-property: width,height;
+            /* all: property의 기본값
+                내가 어떤 속성에 트랜지션을 적용할 지 직접 적용하는 기능
+                작동을 나눠야 할 때 이용
+                ex. width만 줄 경우 세로 크기는 한 번에 변함
+                한 개체 안에서 다양한 변환 방식을 넣을 수 있음 */
+
+            transition-duration: 0.5s,0.5s;
+            /* 트랜지션이 지속되는 시간을 지정 */
+
+            transition-timing-function: ease;
+            /* ease: 트랜지션의 기본값. 가속도 운동
+                linear: 등속운동
+                function에서 기본 제공하는 움직임 외에
+                다른 움직임을 원하는 경우 가속도 함수 사이트 이용 */
+            /* transition: 0.5s cubic-bezier() */
+
+            transition-delay: 0s,0.5s;
+            /* 트랜지션이 실행되기 전까지 지연시킬 시간을 지정 */
         }
 
         .box:hover{
