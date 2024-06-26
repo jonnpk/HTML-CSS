@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="../reset.css"> -->
+    <style>
+        table{
+            /* border-spacing: 20px;
+                셀 간의 간격 */
+
+            border-collapse: collapse;
+            /* 셀 간의 간격을 없애는 속성
+                셀 간격을 없애려면 border-spacing을 줄이는 게 아니라
+                위 속성을 줘야 함 */
+
+            border: 1px solid #222;
+        }
+
+        td{
+            border: 1px solid #222;
+        }
+    </style>
 </head>
 <body>
-    
     <table>
         <colgroup>
             <col style="background-color: red;">
-            <col span="2" style="background-color: cadetblue;">
+            <col span="2" style="background-color: aqua;">
             <col>
-            
+            <!-- <col> -->
+            <!-- 병합하면 한 칸 밀리기 때문에 4열 중 마지막 열 지운 것 -->
         </colgroup>
-        <!-- tr*6>td*4{text} -->
         <tr style="background-color: pink;">
             <td>text</td>
             <td>text</td>

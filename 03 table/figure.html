@@ -9,6 +9,9 @@
     <!-- figure 태그는 본문의 이해를 돕기위한 다양한 자료가 들어가는 영역
      ex. 이미지, 표, 차트 등등 -->
 
+    <!-- 이미지를 감싸는 블록 태그가 필요할 때 활용하면 용이함
+        *전부 div로 하면 나중에 구조가 복잡해졌을 때 바로 찾기 어려울 수 있음 -->
+
      <!-- figcaption 태그는 figure를 설명하기 위한 태그 -->
     <section id="table-section">
         <h3></h3>
@@ -16,15 +19,21 @@
             
         </table>
     </section>
+    <!-- section 안에는 제목 태그가 1개는 있어야 함
+        없어도 작동은 하지만 웹표준 경고사항 -->
 
     <figure>
         <figcaption></figcaption>
         <table></table>
     </figure>
+    <!-- figcaption으로 표의 제목을 만들고 싶다면
+        위와 같이 figure로 감싸주는 것이 구조적으로 안정적 -->
 
-    <!-- X -->
+    
     <table>
         <figcaption></figcaption>
     </table>
+    <!-- figcaption은 figure에 대해 설명하는 태그이므로
+        구조상 table 안에 바로 넣는 것은 맞지 않다 -->
 </body>
 </html>
