@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #222;
+        }
+
+        .pack{
+            width: 100px;
+            height: 100px;
+            animation: move 5s alternate infinite linear;
+        }
+
+        .up{
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+            display: block;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            animation: pack-up 0.2s alternate infinite;
+        }
+
+        .down{
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+            display: block;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            animation: pack-down 0.2s alternate infinite;
+        }
+
+        @keyframes pack-up{
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(-30deg);
+            }
+        }
+
+        @keyframes pack-down{
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(30deg);
+            }
+        }
+
+        @keyframes move{
+            from{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(1000px);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="pack">
+        <span class="up"></span>
+        <span class="down"></span>
+    </div>
+</body>
+</html>

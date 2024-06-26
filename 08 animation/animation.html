@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        /* 
+            *animation과 transition의 차이점
+            transition
+                - 속성 값이 변할 때 작동
+                - 세밀한 수치를 넣어야 할 때 활용도 높음
+            animation: 
+                - 자기 혼자서 작동됨
+                - 똑같은 동작이 반복될 때 활용도 높음
+        */
+        .target{
+            margin: 100px;
+            width: 360px;
+            height: 360px;
+            border: 1px solid #222;
+            font-weight: bold;
+            font-size: 32px;
+            color: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            animation: name 3s;
+            /* = animation-name: name;
+                animation-duration: 3s;
+                애니메이션에서 필수적으로 들어가야 하는 것 */
+
+            animation-timing-function: linear;
+            animation-delay: 0.5s;
+            /* 여기까지는 transition과 동일 */
+
+            animation-fill-mode: both;
+            /* 애니메이션이 재생된 후에 어떻게 할 것인지를 정하는 속성 */
+
+            animation-iteration-count: infinite;
+            /* 애니메이션 재생 반복을 정하는 속성 */
+
+            animation-direction: alternate;
+            /* alternate: 왕복운동
+                보편적으로 alternate를 많이 씀 */
+                
+            /* animation-play-state: paused; */
+        }
+
+        .target:hover{
+            animation-play-state: paused;
+            /* 사용하기 까다로운 속성 */
+        }
+
+        @keyframes name{
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="target">
+        target
+    </div>
+</body>
+</html>
