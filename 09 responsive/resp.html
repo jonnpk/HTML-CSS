@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .resp-box{
+            width: 100%;
+            height: 50vh;
+            background-color: pink;
+        }
+
+        @media screen and (max-width:800px) and (min-width:750px) {
+            .resp-box{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 디자인 기획 단계부터 pc 퍼스트 or 모바일 퍼스트 선택 -->
+    <!-- 
+        해상도
+        1366~ pc
+        768~1365 tablet
+        767~ 모바일
+     -->
+
+    <!-- 
+        pc 퍼스트
+
+        @media screen and (max-width:1365) {
+            태블릿
+        }
+
+        @media screen and (max-width:767) {
+            모바일
+        }
+     -->
+
+    <!-- 
+        모바일 퍼스트
+
+        @media screen and (min-width:768) {
+            태블릿
+        }
+
+        @media screen and (min-width:1366) {
+            pc
+        }
+    -->
+    <div class="resp-box"></div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        #my-section{
+            padding: 0 32px;
+        }
+
+        .container{
+            max-width: 1280px;
+            /* max-width와 width는 같은 속성처럼 보이지만 별개의 속성
+                max-width는 커지는 것에 제한은 있지만 작아질 수는 있음 */
+            margin: 0 auto;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 16px;
+        }
+
+        .my-img{
+            width: 100%;
+            aspect-ratio: 1;
+            background-color: grey;
+        }
+
+        .my-article{
+            width: 100%;
+        }
+
+        .title{
+            font-size: 24px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 16px
+        }
+
+        .sub-title{
+            font-size: 20px;
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 16px;
+        }
+
+        .my-article > p {
+            color: #666;
+        }
+
+        @media screen and (max-width:767px) {
+            #my-section{
+                padding: 0 20px;
+            }
+
+            .content{
+                flex-direction: column;
+                margin-bottom: 48px;
+            }
+        }
+
+        @media screen and (max-width:1344px) {
+            .container{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="my-section">
+    <!-- section에는 padding 0 32px 기본으로 넣어주고 모바일에서 변경 -->
+        <div class="container">
+            <!-- container에는 max-width: 컨테이너 사이즈(px)로 구조 잡기 -->
+            <div class="content">
+                <figure class="my-img"></figure>
+                <article class="my-article">
+                    <h2 class="title">제목</h3>
+                    <h3 class="sub-title">부제목</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus corrupti ad, veniam autem doloribus modi ea consectetur molestias? Eos tenetur eaque laboriosam unde facilis in aspernatur nostrum dolorum molestiae expedita.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="my-section">
+        <div class="container">
+            <div class="content">
+                <figure class="my-img"></figure>
+                <article class="my-article">
+                    <h2 class="title">제목</h3>
+                    <h3 class="sub-title">부제목</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus corrupti ad, veniam autem doloribus modi ea consectetur molestias? Eos tenetur eaque laboriosam unde facilis in aspernatur nostrum dolorum molestiae expedita.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="my-section">
+        <div class="container">
+            <div class="content">
+                <figure class="my-img"></figure>
+                <article class="my-article">
+                    <h2 class="title">제목</h3>
+                    <h3 class="sub-title">부제목</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus corrupti ad, veniam autem doloribus modi ea consectetur molestias? Eos tenetur eaque laboriosam unde facilis in aspernatur nostrum dolorum molestiae expedita.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
