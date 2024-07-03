@@ -1,0 +1,72 @@
+.logo-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    height: 100px;
+}
+
+.band-logo{
+    display: block;
+    background: url('../img/bandclone/spr_intro.png') no-repeat 0 -98px;
+    width: 78px;
+    height: 29px;
+}
+
+.accessibility{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0 0 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+
+.menu-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu-area a{
+    text-decoration: none;
+}
+
+.member{
+    color: #222;
+}
+
+.member:hover{
+    text-decoration: underline;
+}
+
+.login{
+    background-color: rgb(21, 213, 21);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: white;
+    font-family: bold;
+    border-radius: 5%;
+}
+
+.section1{
+    box-sizing: border-box;
+    margin-top: 32px;
+}
+
+.section1-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-container h1{
+    font-size: 48px;
+    
+}
+
+

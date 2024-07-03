@@ -5,30 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
-    <style>
-        .logo-header{
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .band-logo{
-            display: block;
-            background: url('../img/bandclone/spr_intro.png') no-repeat 0 -98px;
-            width: 78px;
-            height: 29px;
-        }
-
-        .accessibility{
-            position: absolute;
-            clip: rect(1px, 1px, 1px, 1px);
-            clip-path: inset(0 0 99.9% 99.9%);
-            overflow: hidden;
-            height: 1px;
-            width: 1px;
-            padding: 0;
-            border: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="band.css">
 </head>
 <body>
     <header class="logo-header">
@@ -43,8 +20,8 @@
                     <option value="">日本語</option>
                     <option value="">es·pa·ñol</option>
                 </select>
-                <a href="" class="member">회원가입</a>
-                <a href="" class="login">로그인</a>
+                <a href="#" class="member">회원가입</a>
+                <a href="#" class="login">로그인</a>
             </div>
         </nav>
     </header>
@@ -55,19 +32,16 @@
                 <img src="../img/bandclone/bg_sloganImg.jpg" alt="mobile">
             </figure>
             <main>
-                <h2>모임이 쉬워진다!<br>우리끼리 밴드</h2>
+                <h1>모임이 쉬워진다!<br>우리끼리 밴드</h1>
                 <p>당신의 모임도 BAND로 시작하세요.</p>
                 <div class="mem-log">
                     <div>로그인</div>
                     <div>회원가입</div>
                 </div>
                 <div class="finder">
-                    <span>내게 맞는 밴드를 만나려면</span>
-                    <a href="">밴드 찾기</a>
-                    <span>모임별 밴드 활용법</span>
-                    <a href="">밴드 가이드 보기</a>
-                    <span>만 13세 미만이라면?</span>
-                    <a href="">'밴드 키즈' 알아보기</a>
+                    <p>내게 맞는 밴드를 만나려면<a href="#">밴드 찾기</a></p>
+                    <p>모임별 밴드 활용법<a href="#">밴드 가이드 보기</a></p>
+                    <p>만 13세 미만이라면?<a href="#">'밴드 키즈' 알아보기</a></p>
                 </div>
             </main>
         </div>
@@ -84,35 +58,37 @@
         <div class="pic1">
             <figure>
                 <img src="../img/bandclone/img_seo01.jpg" alt="hand">
-                <h3>어떤 모임이라도!</h3>
-                <p>친구, 가족, 동료 등 함께 하고 싶은 사람과<br>우리만의 공간을 만들어보세요.</p>
             </figure>
+            <h3>어떤 모임이라도!</h3>
+            <p>친구, 가족, 동료 등 함께 하고 싶은 사람과<br>우리만의 공간을 만들어보세요.</p>
         </div>
         <div class="pic2">
             <figure>
                 <img src="../img/bandclone/img_seo02.jpg" alt="people">
-                <h3>모임에 딱 맞는 기능들</h3>
-                <p>투표로 의견을 모으고, 함께 일정을 공유하며<br>게시판과 앨범에는 추억을 쌓아보세요.</p>
             </figure>
+            <h3>모임에 딱 맞는 기능들</h3>
+            <p>투표로 의견을 모으고, 함께 일정을 공유하며<br>게시판과 앨범에는 추억을 쌓아보세요.</p>
         </div>
         <div class="pic3">
             <figure>
                 <img src="../img/bandclone/img_seo03.jpg" alt="riding">
-                <h3>내가 원하는 모임 찾기</h3>
-                <p>취미, 스포츠, 또래 모임 등<br>나와 같은 관심사 밴드를 찾을 수 있어요.</p>
             </figure>
+            <h3>내가 원하는 모임 찾기</h3>
+            <p>취미, 스포츠, 또래 모임 등<br>나와 같은 관심사 밴드를 찾을 수 있어요.</p>
         </div>
     </section>
 
     <section class="section4">
         <div class="list-area">
             <div class="header">
-                <span>이런 밴드는 어때요</span>
-                <span>모두보기</span>
+                <h2></h2>
+                <a href="#">모두보기</a>
             </div>
             <main>
                  <a href="" class="list-area">
-                    <img src="../img/bandclone/5_0c5Ud018svc19ll62lkpae6d_4269mp.jpg" alt="on문답">
+                    <figure>
+                        <img src="../img/bandclone/5_0c5Ud018svc19ll62lkpae6d_4269mp.jpg" alt="on문답">
+                    </figure>
                     <div class="list-part">
                         <a href="">on문답 &#40;문화유적 답사&#41;</a>
                         <p>소중한 우리 역사문화유적, 알고 보면 재미있습니다. 사진으로 ...</p>
@@ -124,7 +100,9 @@
                     </div>
                 </a>
                 <a href="" class="list-area">
-                    <img src="../img/bandclone/2_h54Ud018svcnqbc8wfbo426_hht2ba.jpg" alt="NC다이노스">
+                    <figure>                    
+                        <img src="../img/bandclone/2_h54Ud018svcnqbc8wfbo426_hht2ba.jpg" alt="NC다이노스">
+                    </figure>
                     <div class="list-part">
                         <a href="">NC 다이노스 팬밴드</a>
                         <p>9번째 심장 NC다이노스 팬밴드에 오신 것을 환영합니다~~^^ ...</p>
@@ -136,7 +114,9 @@
                     </div>
                 </a>
                 <a href="" class="list-area">
-                    <img src="../img/bandclone/2_i71Ud018svcx2em1628dqop_q4uppf.jpg" alt="그림">
+                    <figure>
+                        <img src="../img/bandclone/2_i71Ud018svcx2em1628dqop_q4uppf.jpg" alt="그림">
+                    </figure>
                     <div class="list-part">
                         <a href="">그림으로여행</a>
                         <p>그림을 좋아하는 사람들의 커뮤니티밴드입니다.</p>
@@ -148,7 +128,9 @@
                     </div>
                 </a>
                 <a href="" class="list-area">
-                    <img src="../img/bandclone/bcaUd015y6z6r4v5dmit_4hbpis.jpg" alt="철새">
+                    <figure>
+                        <img src="../img/bandclone/bcaUd015y6z6r4v5dmit_4hbpis.jpg" alt="철새">
+                    </figure>
                     <div class="list-part">
                         <a href="">철새탐사 동호회</a>
                         <p>철새탐사를 통하여 자연사랑을 배우는 동호회 새를 사랑하는 ...</p>
@@ -160,7 +142,9 @@
                     </div>
                 </a>
                 <a href="" class="list-area">
-                    <img src="../img/bandclone/6_6d2Ud018svck4m0llboyjbj_pq57xk.jpg" alt="English">
+                    <figure>
+                        <img src="../img/bandclone/6_6d2Ud018svck4m0llboyjbj_pq57xk.jpg" alt="English">
+                    </figure>
                     <div class="list-part">
                         <a href="">Let's study English.</a>
                         <p>네이버 오늘의 회화를 공부한 흔적을 남기는 곳이며 차츰 영어 ...</p>
@@ -172,61 +156,71 @@
                     </div>
                 </a>
                 <a href="" class="list-area">
-                    <img src="../i" alt="국립공원">
+                    <figure>
+                        <img src="../img/bandclone/mmmm.jpg" alt="국립공원">
+                    </figure>
                     <div class="list-part">
-                        <a href="">on문답 &#40;문화유적 답사&#41;</a>
-                        <p>소중한 우리 역사문화유적, 알고 보면 재미있습니다. 사진으로...</p>
-                        <p>멤버 720 &middot; 리더 임도혁61대전</p>
+                        <a href="">국립공원 국민모니터링</a>
+                        <p>국립공원 생물계절 모니터링을 위한 밴드입니다.</p>
+                        <p>멤버 797 &middot; 리더 국립공원연구원</p>
                         <a href="" class="list-link">
-                            <span>문화유적</span>
+                            <span>생태</span>
                             <span>밴드 더보기 &#62;</span>
                         </a>
                     </div>
                 </a>
                 <a href="" class="list-area">
-                    <img src="../img/bandclone/5_0c5Ud018svc19ll62lkpae6d_4269mp.jpg" alt="on문답">
+                    <figure>
+                        <img src="../img/bandclone/182Ud017svchejjyks0gv4e_jntmvh.jpg" alt="홍차">
+                    </figure>
                     <div class="list-part">
-                        <a href="">on문답 &#40;문화유적 답사&#41;</a>
-                        <p>소중한 우리 역사문화유적, 알고 보면 재미있습니다. 사진으로...</p>
-                        <p>멤버 720 &middot; 리더 임도혁61대전</p>
+                        <a href="">홍차 이야기</a>
+                        <p>홍차 틴을 모으는 것을 취미로 하는 사람. 가끔은 홍차여행을 떠...</p>
+                        <p>멤버 2,353 &middot; 리더 이 인형</p>
                         <a href="" class="list-link">
-                            <span>문화유적</span>
+                            <span>홍차</span>
                             <span>밴드 더보기 &#62;</span>
                         </a>
                     </div>
                 </a>
                 <a href="" class="list-area">
-                    <img src="../img/bandclone/5_0c5Ud018svc19ll62lkpae6d_4269mp.jpg" alt="on문답">
+                    <figure>
+                        <img src="../img/bandclone/8_eb8Ud018svc1uvocs8edz8p0_pnino8.jpg" alt="양피지">
+                    </figure>
                     <div class="list-part">
-                        <a href="">on문답 &#40;문화유적 답사&#41;</a>
-                        <p>소중한 우리 역사문화유적, 알고 보면 재미있습니다. 사진으로...</p>
-                        <p>멤버 720 &middot; 리더 임도혁61대전</p>
+                        <a href="">영어필사</a>
+                        <p>영어필사공간입니다. 참여밴드로 진행중이거나 관심있는 영...</p>
+                        <p>멤버 603 &middot; 리더 Su</p>
                         <a href="" class="list-link">
-                            <span>문화유적</span>
+                            <span>영어필사</span>
                             <span>밴드 더보기 &#62;</span>
                         </a>
                     </div>
                 </a>
                 <a href="" class="list-area">
-                    <img src="../img/bandclone/5_0c5Ud018svc19ll62lkpae6d_4269mp.jpg" alt="on문답">
+                    <figure>
+                        <img src="../img/bandclone/9_i2jUd018svc153asjbezzi5d_aty9tf.jpg" alt="회화작">
+                    </figure>
                     <div class="list-part">
-                        <a href="">on문답 &#40;문화유적 답사&#41;</a>
-                        <p>소중한 우리 역사문화유적, 알고 보면 재미있습니다. 사진으로...</p>
-                        <p>멤버 720 &middot; 리더 임도혁61대전</p>
+                        <a href="">공식 밴드 그림 그리기 좋은날</a>
+                        <p>미술밴드 : 그림감상, 작가의 조언, 수채화, 아크릴화, 유화, 회화...</p>
+                        <p>멤버 37,184 &middot; Happyday</p>
                         <a href="" class="list-link">
-                            <span>문화유적</span>
+                            <span>그림감상</span>
                             <span>밴드 더보기 &#62;</span>
                         </a>
                     </div>
                 </a>
                 <a href="" class="list-area">
-                    <img src="../img/bandclone/5_0c5Ud018svc19ll62lkpae6d_4269mp.jpg" alt="on문답">
+                    <figure>                    
+                        <img src="../img/bandclone/g_i51Ud018svcm6dcm29mgxyj_3svvc4.jpg" alt="크로키">
+                    </figure>
                     <div class="list-part">
-                        <a href="">on문답 &#40;문화유적 답사&#41;</a>
-                        <p>소중한 우리 역사문화유적, 알고 보면 재미있습니다. 사진으로...</p>
-                        <p>멤버 720 &middot; 리더 임도혁61대전</p>
+                        <a href="">매일 크로키하기</a>
+                        <p>매일 크로키</p>
+                        <p>멤버 551 &middot; 리더 먕</p>
                         <a href="" class="list-link">
-                            <span>문화유적</span>
+                            <span>크로기 그림</span>
                             <span>밴드 더보기 &#62;</span>
                         </a>
                     </div>
@@ -236,37 +230,39 @@
     </section>
 
     <footer class="footer">
-        <div class="appstore">
+        <div class="download">
             <div class="app-band">
-                <figure>
-                    <img src="" alt="">
-                    <h3></h3>
-                    <p></p>
-                </figure>
+                <figure class="app-logo"></figure>
+                <h3>밴드앱을 다운로드 하세요!</h3>
+                <p>당신의 모임도 BAND로 시작하세요.</p>
             </div>
             <div>
-                <a href="#">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </a>
+                <a href="#" class="google-play"></a>
+                <a href="#" class="app-store"></a>
             </div>
         </div>
-        <div class="copyright">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <p></p>
-        </div>
+        <nav class="foot-nav">
+            <ul class="foot-menu">
+                <li>블로그</li>
+                <li>공지사항</li>
+                <li>스티커제안</li>
+                <li>광고</li>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+                <li>쿠키 설정</li>
+                <li>CCPA 개인 정보 관리</li>
+                <li>청소년 보호를 위한 노력</li>
+                <li>활동정책</li>
+                <li>권리침해 신고안내</li>
+                <li>개발자</li>
+                <li>도움말</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+        <p>BAND &copy; 2024</p>
     </footer>
 </body>
 </html>
