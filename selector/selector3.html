@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../reset.css"> -->
+    <style>
+        .reaction-box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 189, 94);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .reaction-box:hover{
+            background-color: rgb(0, 253, 42);
+        }
+
+        .reaction-box:active{
+            background-color: rgb(255, 77, 255);
+        }
+
+        .reaction-container:hover > h3{
+            color: rgb(255, 0, 0);
+        }
+
+        .reaction-container:hover > p{
+            color: blue;
+        }
+
+        input:enabled{
+            background: aqua;
+            color: white
+        }
+
+        input:disabled{
+            background: black;
+        }
+
+        input:focus{
+            background: orange;
+        }
+
+        a:link{
+            color: pink;
+        }
+
+        a:visited{
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        접두
+        : first, last, nth, nth-last
+        *nth: n번째 라는 뜻. 앞에서부터 세는 것
+        *nth-last: 뒤에서 부터 n번째
+
+        접미
+        : child, of-type
+        *child: 자식
+        *of-type: 형태
+        ex. nth-child(4): 자식의 전체 요소 중 4번째
+        ex. div.nth-of-type(4): 자식의 div 요소 중 4번째
+     -->
+
+    <div class="reaction-box">
+        반응 선택자
+    </div>
+
+    <!-- 
+        반응 선택자
+        선택자:active -> 클릭 중일 때
+        선택자:hover -> 마우스를 올렸을 때
+      -->
+
+    <div class="reaction-container">
+        <h3>반응하는 제목</h3>
+        <p>반응하는 본문</p>
+    </div>
+
+    <!-- 
+        상태선택자: input의 부수속성
+        :checked -> 체크박스들이 체크되어 있을 때
+        :focus -> 포커스를 가지고 있을 때
+        :enabled -> 활성화된 컨텐츠일 때
+        :disabled -> 비활성화된 컨텐츠일 때
+     -->
+
+    <h3>enabled</h3>
+    <p>
+        <input type="text">
+    </p>
+
+    <h3>disabled</h3>
+    <p>
+        입력을 할 수 없는 상태로 만들기
+        <br>
+        <input disabled="disabled">
+    </p>
+
+    <!-- 링크선택자 -->
+
+    <a href="https://naver.com">네이버</a>
+    <a href="https://blog.naver.com/jonnpk">공간</a>
+
+    <!-- 
+        문자선택자
+        ::first-letter -> 첫 번째 글자에 적용. 현재는 잘 쓰지 않음
+        ::first-line -> 첫 번째 줄에 적용. 현재는 잘 쓰지 않음 
+        ::after / ::before -> 본래용도는 앞, 뒤에 글씨를 넣기 위한 선택자이지만, 디자인만을 위한 가상요소를 만들 때 많이 사용. 각 컨텐츠당 하나씩만 만들 수 있음
+        ::selection -> 드래그한 영역에 적용
+     -->
+
+    <!-- 
+        부정선택자
+        선택자:not(선택자) -> ~가 아닐 때 어떤 속성을 주겠다는 뜻
+        *보편적으로 많이 쓰진 않음
+     -->
+</body>
+</html>

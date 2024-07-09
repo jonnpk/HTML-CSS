@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        /* flex: 자식 요소들의 정렬을 관리할 수 있게 해줌 */
+        .container{
+            border: 1px solid #222;
+            width: 800px;
+            height: 800px;
+            
+            display: flex;
+            
+            justify-content: center;
+            /* 정렬하는 축 기준 방향 */
+            /* flex-start, center, flex-end */
+            /* space: 양쪽으로 정렬하는 속성
+                between: 가장 많이 쓰는 속성 */
+            align-items: center;
+            /* 정렬하는 축 기준 수직 방향 */
+            /* flex-start, center, flex-end */
+            gap: 24px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border: 1px solid #222;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    
+    </div>
+</body>
+</html>

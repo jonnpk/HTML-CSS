@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        /* float: 정렬하기 위해 'clear: both'를 사용해야 하기 때문에
+            활용도가 떨어짐 */
+
+        .hi{
+            float: left;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #222;
+            float: left;
+            background-color: beige;
+
+        }
+        .분리{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 줄복사: alt + shift + 방향키 위 아래 -->
+    <!-- ctrl + alt로 여러 줄 선택 가능 -->
+    <!-- 동일한 내용 수정:
+        드래그 후 ctrl + D로 같은 내용 다중 선택 가능 -->
+    <div class="hi">안녕하세요</div>
+    <div class="hi">안녕하세요</div>
+    <div class="hi">안녕하세요</div>
+    <div class="hi">반갑습니다</div>
+    <div class="hi">반갑습니다</div>
+    <div class="hi">반갑습니다</div>
+
+    <div class="box 분리">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+
+    <div style="clear: both;">테스트</div>
+
+    <div class="container">
+        <div class="box">내부box</div>
+        <div class="box">내부box</div>
+        <div class="box">내부box</div>
+        <div class="box">내부box</div>
+        <div class="box">내부box</div>
+    </div>
+    <div style="clear: both;">다음</div>
+   
+</body>
+</html>

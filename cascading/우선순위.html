@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 초기화는 css 맨 위에 작성되어야 함 -->
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        /* !important 문법 예시
+        자식{color: yellow!important;}
+            최후의 보루. 가급적이면 사용하지 말 것 */
+
+        .부모 > .자식{
+            color: red;
+        }
+
+        .부모{
+            color: pink;
+        }
+        
+        .자식{
+            color: blue; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- css 우선순위 규칙
+        - 나중에 선언된 것이 높은 우선순위를 가진다.
+        - 작성 순서와 상관 없이 id > class > tag 순으로 우선순위를 가진다.
+        - 부모로부터 상속 받은 속성은 우선순위가 가장 낮다.
+        - 우선순위가 같은 경우 부모&자식 관계가 많은 순서로 우선순위를 가진다.
+        - -->
+
+    <!-- 우선순위
+        1. important
+        2. html 내의 인라인 스타일(태그 내에 지정)
+        3. id로 지정한 속성 
+        4. class로 지정한 속성
+        5. tag로 지정한 속성
+        6. 상속 받은 속성
+        
+        *우선순위가 같을 경우,
+        1. 부모&자식 관계가 많은 순서
+        2. 더 아래 쪽에 작성된 순서
+        -->
+    <p class="부모">안녕하세요 저는 <span class="자식">홍길동</span>입니다.</p>
+    <span class="자식">부모를 부모라 부르지 못하고</span>
+</body>
+</html>

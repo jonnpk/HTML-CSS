@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 1px solid #222;
+
+            /* overflow: hidden; */
+            /* 넘치는 컨텐츠를 감춰버림
+                만약 높이 설정을 안 한다면 작동 안 함  */
+            overflow-y: scroll;
+            /* 컨텐츠가 넘치더라도 다 보여줘야 하는 경우
+                축을 지정하지 않으면 x, y축에 다 스크롤이 생김
+                ex. overflow: scroll; */
+            /* overflow: auto; */
+            /* 컨텐츠가 안 넘칠 때는 스크롤바가 없고
+                넘치면 스크롤이 생기는 기능 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus unde quisquam amet voluptas eligendi debitis quis id suscipit atque incidunt, maiores nam. Quaerat beatae cum, optio inventore repellat quisquam.</div>
+</body>
+</html>

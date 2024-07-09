@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 간이 초기화
+            '*' = 전체선택자 */
+
+        .hello{font-size: 20px;}
+        
+        #me{
+            font-weight: bold;
+            font-size: 24px;
+            color: blue;    
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 선택자의 종류
+        1. 태그 선택자 (태그 이름)
+            초기화의 성질이 강함
+            개별 속성을 설정하기 위한 선택자로는 적합하지 않음
+        2. 클래스 선택자 (.)
+            반복될 것을 전제로 한 선택자
+            가장 많이 사용
+        3. 아이디 선택자 (#)
+            단 하나뿐인 컨텐츠에 속성을 주기 위한 선택자
+            동일한 id는 한 문서 내에서 한 번만 사용 가능-->
+    <p>JONN의 다락방</p>
+    <span class="hello">안녕하세요</span>
+    <span id="me">저입니다.</span>
+
+</body>
+</html>

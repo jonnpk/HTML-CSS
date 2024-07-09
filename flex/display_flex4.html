@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .temp-img{
+            background-color: salmon;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+            /* 찌그러지지 않게 만드는 속성 */
+        }
+
+        .comment{
+            flex-grow: 1;
+            width: 100%;
+            /* 비율로 설정 가능
+                ex. 1 : 2 : 1 */
+        }
+
+        .button{
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="temp-img"></div>
+        <p class="comment">안녕하세요</p>
+        <button class="button">삭제</button>
+    </div>
+
+    <div class="container">
+        <div class="temp-img"></div>
+        <p class="comment">안녕하세요</p>
+        <button class="button">삭제</button>
+    </div>
+
+
+    <div class="container">
+        <div class="temp-img"></div>
+        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero in asperiores nostrum facere repudiandae porro tenetur ea animi. Error aliquid pariatur autem voluptate reiciendis corrupti amet quidem eos, magni deserunt.</p>
+        <button class="button">삭제</button>
+    </div>
+
+
+    <div class="container">
+        <div class="temp-img"></div>
+        <p class="comment">안녕하세요</p>
+        <button class="button">삭제</button>
+    </div>
+
+
+</body>
+</html>

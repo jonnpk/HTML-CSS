@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            /* 정렬을 아래 방향(열에 맞춤)으로 하고 싶을 때 사용
+            *기본 정렬은 행에 맞춰져 있음(flex-direction: row) */
+
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid #222;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

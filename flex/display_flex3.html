@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container{
+            /* width: 420px; */
+            height: 800px;
+            border: 1px solid #222;
+            display: flex;
+            gap: 16px;
+                /* gap에는 아래의 속성들이 자동으로 들어가 있다
+                    row-gap: 16px;
+                    column-gap: 16px; */
+            /* justify space-between 속성을 주더라도 갭을 주는 게 좋음
+                웹의 해상도에 따라 정렬이 달라질 수 있기 때문
+                컨텐츠끼리 달라붙는 건 좋지 않음 */
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* 컨텐츠가 부모 밖으로 넘쳤을 때 줄바꿈을 통해
+                여러줄로 표시할 수 있는 속성 */
+            align-content: flex-start;
+            /* 컨텐츠가 여러 줄이 되었을 때 수직 방향 정렬을 다루는 속성 */
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: firebrick;
+            border: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
