@@ -140,6 +140,43 @@ img{
 #section2{
     background-image: url(../img/bandclone/bg_intro.jpg);
     height: 540px;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
+
+.text-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+.text-area > h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.text-area > p{
+    line-height: 30px;
+}
+
+#section3{
+    padding: 60px 32px;
+    background-color: white;
+}
+
+#section3 > .section-container{
+    display: flex;
+    gap: 50px;
+}
+
+.pic > figure {
+    margin-bottom: 32px;
+}
+
 
 
