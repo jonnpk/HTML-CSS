@@ -175,8 +175,16 @@ img{
 }
 
 .pic > figure {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
+.pic > h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
-
+.pic > p{
+    color: #383838;
+    font-size: 15px;
+    line-height: 150%;
+}
