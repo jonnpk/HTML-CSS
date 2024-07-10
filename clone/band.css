@@ -189,6 +189,10 @@ img{
     line-height: 150%;
 }
 
+#section4{
+    margin-bottom: 40px;
+}
+
 .bandli-header{
     display: flex;
     justify-content: space-between;
@@ -288,7 +292,118 @@ img{
     color: #222;
 }
 
+#section5{
+    background-color: white;
 
+}
 
+.download{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
 
+.app-band{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
 
+.app-band > figure{
+    width: fit-content
+}
+
+.app-logo{
+    display: block;
+    background: url(../img/bandclone/spr_intro.png) no-repeat -162px 0;
+	width: 70px;
+	height: 70px;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message > h3{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.message > p{
+    font-size: 14px;
+    color: #666;
+}
+
+.google-play{
+    display: block;
+    background: url(../img/bandclone/spr_intro.png) no-repeat 0 0;
+	width: 160px;
+	height: 47px;
+}
+
+.app-store{
+    display: block;
+    background: url(../img/bandclone/spr_intro.png) no-repeat 0 -49px;
+	width: 160px;
+	height: 47px;
+}
+
+.download-button{
+    display: flex;
+    gap: 8px;
+}
+
+footer{
+    padding: 0 32px;
+    background-color: #2a3038;
+}
+
+footer > .section-container{
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+
+.foot-nav{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.foot-menu{
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foot-menu a{
+    text-decoration: none;
+    color: #888;
+    line-height: 130%;
+}
+
+.foot-menu a:hover{
+    text-decoration: underline;
+}
+
+footer > .section-container > p{
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.foot-list::before{
+    margin: 0 8px 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 2px;
+    height: 2px;
+    background-color: var(--tier2TextSubLv04);
+    content: '';
+}
+
+.foot-menu strong{
+    color: #a8a8a8;
+    font-weight: bold;
+}
