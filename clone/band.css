@@ -56,16 +56,12 @@ img{
 }
 
 .login{
-    background-color: rgb(21, 213, 21);
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 24px;
-    padding-right: 24px;
+    background-color: #21c531;
+    padding : 12px 24px;
     color: white;
-    font-family: bold;
+    font-weight: bold;
     border-radius: 4%;
 }
-
 
 .section-container{
     width: 1000px;
@@ -87,7 +83,6 @@ img{
 
 .intro-content > h1{
     font-size: 48px;
-    row-gap: 10px;
 }
 
 .button-box{
@@ -165,7 +160,7 @@ img{
 }
 
 #section3{
-    padding: 60px 32px;
+    padding: 48px 32px;
     background-color: white;
 }
 
@@ -180,7 +175,7 @@ img{
 
 .pic > h3{
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .pic > p{
@@ -249,7 +244,7 @@ img{
 }
 
 .list-part > p{
-    width: 380px;
+    width: 375px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -294,7 +289,6 @@ img{
 
 #section5{
     background-color: white;
-
 }
 
 .download{
@@ -308,10 +302,6 @@ img{
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
-}
-
-.app-band > figure{
-    width: fit-content
 }
 
 .app-logo{
@@ -337,6 +327,11 @@ img{
     color: #666;
 }
 
+.download-button{
+    display: flex;
+    gap: 8px;
+}
+
 .google-play{
     display: block;
     background: url(../img/bandclone/spr_intro.png) no-repeat 0 0;
@@ -349,11 +344,6 @@ img{
     background: url(../img/bandclone/spr_intro.png) no-repeat 0 -49px;
 	width: 160px;
 	height: 47px;
-}
-
-.download-button{
-    display: flex;
-    gap: 8px;
 }
 
 footer{
@@ -377,6 +367,11 @@ footer > .section-container{
     flex-wrap: wrap;
 }
 
+.foot-menu strong{
+    color: #a8a8a8;
+    font-weight: bold;
+}
+
 .foot-menu a{
     text-decoration: none;
     color: #888;
@@ -385,12 +380,6 @@ footer > .section-container{
 
 .foot-menu a:hover{
     text-decoration: underline;
-}
-
-footer > .section-container > p{
-    color: #b3b3b3;
-    font-size: 13px;
-    font-weight: bold;
 }
 
 .foot-list::before{
@@ -403,7 +392,8 @@ footer > .section-container > p{
     content: '';
 }
 
-.foot-menu strong{
-    color: #a8a8a8;
+footer > .section-container > p{
+    color: #b3b3b3;
+    font-size: 13px;
     font-weight: bold;
 }
