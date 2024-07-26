@@ -1,0 +1,67 @@
+.wrap{
+    padding: 0 180px;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-container figure{
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+.icon-container a{
+    width: 100%;
+}
+
+.icon-left{
+    display: flex;
+}
+
+.icon-left > .menu{
+    display: block;
+    background: url('../img/naver-clone/sprite.png') no-repeat -576px -439px;
+	width: 52px;
+	height: 42px;
+    padding: 8px;
+}
+
+.icon-left > .pay{
+    display: block;
+    background: url('../img/naver-clone/sprite.png') no-repeat -652px -66px;
+	width: 64px;
+	height: 64px;
+    padding: 8px;
+}
+
+.icon-right{
+    display: flex;
+}
+
+.icon-right > .talk{
+    display: block;
+    background: url('../img/naver-clone/sprite.png') no-repeat -657px -335px;
+	width: 54px;
+	height: 54px;
+    padding: 8px;
+}
+
+.icon-right > .report{
+    display: block;
+    background: url('../img/naver-clone/sprite.png') no-repeat -501px -464px;
+	width: 46px;
+	height: 51px;
+    padding: 8px;
+}
+
+.icon-right > .shopping{
+    display: block;
+    background: url('../img/naver-clone/sprite.png') no-repeat -658px -204px;
+	width: 52px;
+	height: 51px;
+    padding: 8px;
+}
+
