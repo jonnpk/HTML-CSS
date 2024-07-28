@@ -67,17 +67,99 @@
 
 .search-container{
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .search-bar{
-    width: 706px;
-    background-color: white;
+    width: 1000px;
+    height: 50px;
+    padding: 16px 32px;
     border: 1px solid #14CA65;
+    border-radius: 50px;
+    display: flex; 
+    position: relative;
 }
 
 .search-bar > input{
     width: 100%;
     height: 58px;
+    border: none;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    outline: none;
+    font-weight: bold;
+    padding: 0;
 }
+
+.search-bar > .logo{
+    display: block;
+    background: url('../img/naver-clone/sprite.png') no-repeat -776px -250px;
+	width: 48px;
+	height: 48px;
+    box-sizing: border-box;
+    padding: 17px;
+}
+
+.search-bar > .key-btn{
+    display: block;
+    background: url('../img/naver-clone/sprite.png') no-repeat -718px -638px;
+	width: 48px;
+	height: 28px;
+    position: absolute;
+    right: 100px;
+    top: 33%;
+}
+
+.search-bar > .history-btn{
+    display: block;
+    background: url('../img/naver-clone/sprite.png') no-repeat -287px -353px;
+	width: 16px;
+	height: 10px;
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    border: none;
+    padding: 26px 6px;
+}
+
+.search-icon-area{
+    padding: 16px;
+    all: unset;
+}
+
+.search-bar span{
+    display: block;
+    width: 49px;
+    height: 48px;
+}
+
+.search-bar > .search-icon{
+    display: block;
+    background: url('../img/naver-clone/sprite.png') no-repeat -673px -668px;
+	width: 49px;
+	height: 48px;
+}
+
+.nav-category-container{
+    display: flex;
+    width: 1000px;
+    height: 70px;
+    margin-top: 16px;
+}
+
+.nav-category .mail-icon{
+	width: 50px;
+	height: 50px;
+    display: inline-block;
+    background-image: url('../img/naver-clone/sprite.png');
+    background-size: 916px 888px;
+    background-position: -498px -95px;
+    background-repeat: no-repeat;
+    padding: 4px;
+    border: 1px solid #777;
+}
+
+
+
 
