@@ -2,43 +2,40 @@
     padding: 0 180px;
 }
 
+header{
+    gap: 8px;
+}
+
 .icon-container{
     display: flex;
     justify-content: space-between;
-}
-
-.icon-container figure{
-    width: 48px;
-    height: 48px;
-    display: block;
-}
-
-.icon-container a{
-    width: 100%;
+    margin-top: 16px;
 }
 
 .icon-left{
     display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
-.icon-left > .menu{
+.icon-left .menu{
     display: block;
     background: url('../img/naver-clone/sprite.png') no-repeat -576px -439px;
 	width: 52px;
 	height: 42px;
-    padding: 8px;
 }
 
-.icon-left > .pay{
+.icon-left .pay{
     display: block;
     background: url('../img/naver-clone/sprite.png') no-repeat -652px -66px;
 	width: 64px;
 	height: 64px;
-    padding: 8px;
 }
 
 .icon-right{
     display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .icon-right > .talk{
@@ -46,7 +43,6 @@
     background: url('../img/naver-clone/sprite.png') no-repeat -657px -335px;
 	width: 54px;
 	height: 54px;
-    padding: 8px;
 }
 
 .icon-right > .report{
@@ -54,7 +50,6 @@
     background: url('../img/naver-clone/sprite.png') no-repeat -501px -464px;
 	width: 46px;
 	height: 51px;
-    padding: 8px;
 }
 
 .icon-right > .shopping{
@@ -62,7 +57,6 @@
     background: url('../img/naver-clone/sprite.png') no-repeat -658px -204px;
 	width: 52px;
 	height: 51px;
-    padding: 8px;
 }
 
 .search-container{
@@ -79,17 +73,19 @@
     border-radius: 50px;
     display: flex; 
     position: relative;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .search-bar > input{
-    width: 100%;
+    width: 700px;
     height: 58px;
     border: none;
-    font-size: 1.4rem;
-    line-height: 1.7rem;
+    font-size: 32px;
     outline: none;
     font-weight: bold;
-    padding: 0;
+    margin-left: 16px;
+    margin-right: 50px;
 }
 
 .search-bar > .logo{
@@ -97,18 +93,13 @@
     background: url('../img/naver-clone/sprite.png') no-repeat -776px -250px;
 	width: 48px;
 	height: 48px;
-    box-sizing: border-box;
-    padding: 17px;
 }
 
 .search-bar > .key-btn{
     display: block;
-    background: url('../img/naver-clone/sprite.png') no-repeat -718px -638px;
+    background: url('../img/naver-clone/sprite.png') no-repeat -480px -540px;
 	width: 48px;
 	height: 28px;
-    position: absolute;
-    right: 100px;
-    top: 33%;
 }
 
 .search-bar > .history-btn{
@@ -116,22 +107,8 @@
     background: url('../img/naver-clone/sprite.png') no-repeat -287px -353px;
 	width: 16px;
 	height: 10px;
-    position: absolute;
-    top: 50%;
-    right: 70px;
-    border: none;
-    padding: 26px 6px;
-}
-
-.search-icon-area{
-    padding: 16px;
-    all: unset;
-}
-
-.search-bar span{
-    display: block;
-    width: 49px;
-    height: 48px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .search-bar > .search-icon{
@@ -141,25 +118,94 @@
 	height: 48px;
 }
 
-.nav-category-container{
+.nav-category-box{
     display: flex;
     width: 1000px;
     height: 70px;
     margin-top: 16px;
+    justify-content: space-between;
+}
+
+.nav-category > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #222;
+    gap: 8px;
+}
+
+.nav-category p{
+    font-size: 18px;
 }
 
 .nav-category .mail-icon{
-	width: 50px;
-	height: 50px;
-    display: inline-block;
-    background-image: url('../img/naver-clone/sprite.png');
-    background-size: 916px 888px;
-    background-position: -498px -95px;
-    background-repeat: no-repeat;
-    padding: 4px;
-    border: 1px solid #777;
+    display: block;
+    background: url('../img/naver-clone/sprite.png') no-repeat -450px -726px;
+	width: 48px;
+	height: 48px;
 }
 
+.nav-category .cafe-icon{
+    background: url('../img/naver-clone/sprite.png') no-repeat -350px -726px;
+	width: 48px;
+	height: 48px;
+}
+
+.nav-category .blog-icon{
+    background: url('../img/naver-clone/sprite.png') no-repeat -350px -726px;
+	width: 48px;
+	height: 48px;
+}
+
+.nav-category .shopping-icon{
+    background: url('../img/naver-clone/sprite.png') no-repeat -350px -726px;
+	width: 48px;
+	height: 48px;
+}
+
+.nav-category .news-icon{
+    background: url('../img/naver-clone/sprite.png') no-repeat -350px -726px;
+	width: 48px;
+	height: 48px;
+}
+
+.nav-category .stock-icon{
+    background: url('../img/naver-clone/sprite.png') no-repeat -350px -726px;
+	width: 48px;
+	height: 48px;
+}
+
+.nav-category .property-icon{
+    background: url('../img/naver-clone/sprite.png') no-repeat -350px -726px;
+	width: 48px;
+	height: 48px;
+}
+
+.nav-category .map-icon{
+    background: url('../img/naver-clone/sprite.png') no-repeat -350px -726px;
+	width: 48px;
+	height: 48px;
+}
+
+.nav-category .webtoon-icon{
+    background: url('../img/naver-clone/sprite.png') no-repeat -350px -726px;
+	width: 48px;
+	height: 48px;
+}
+
+.nav-category .chizizik-icon{
+    background: url('../img/naver-clone/sprite.png') no-repeat -350px -726px;
+	width: 48px;
+	height: 48px;
+}
+
+.nav-category .others-icon{
+    background: url('../img/naver-clone/sprite.png') no-repeat -350px -726px;
+	width: 48px;
+	height: 48px;
+}
 
 
 
