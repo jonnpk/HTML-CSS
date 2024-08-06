@@ -1,9 +1,14 @@
 .wrap{
-    padding: 0 180px;
+    padding: 0 120px;
 }
 
 header{
+    width: 1280px;
+    margin: 0 auto;
     gap: 8px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .icon-container{
@@ -15,48 +20,63 @@ header{
 .icon-left{
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
+}
+
+.icon-container a{
+    display: block;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 8px;
 }
 
 .icon-left .menu{
-    display: block;
     background: url('../img/naver-clone/sprite.png') no-repeat -576px -439px;
 	width: 52px;
 	height: 42px;
+    transform: scale(0.615, 0.762);
+    transform-origin: top left;
 }
 
 .icon-left .pay{
-    display: block;
     background: url('../img/naver-clone/sprite.png') no-repeat -652px -66px;
 	width: 64px;
 	height: 64px;
+    transform: scale(0.5);
+    transform-origin: top left;
 }
 
 .icon-right{
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
 }
 
-.icon-right > .talk{
-    display: block;
+.icon-right .talk{
     background: url('../img/naver-clone/sprite.png') no-repeat -657px -335px;
 	width: 54px;
 	height: 54px;
+    transform: scale(0.592);
+    transform-origin: top left;
 }
 
-.icon-right > .report{
-    display: block;
+.icon-right .report{
     background: url('../img/naver-clone/sprite.png') no-repeat -501px -464px;
 	width: 46px;
 	height: 51px;
+    transform: scale(0.695, 0.627);
+    transform-origin: top left;
 }
 
-.icon-right > .shopping{
+.icon-right .shopping{
     display: block;
     background: url('../img/naver-clone/sprite.png') no-repeat -658px -204px;
 	width: 52px;
 	height: 51px;
+    transform: scale(0.615, 0.627);
+    transform-origin: top left;
 }
 
 .search-container{
@@ -66,85 +86,135 @@ header{
 }
 
 .search-bar{
-    width: 1000px;
-    height: 50px;
-    padding: 16px 32px;
+    width: 706px;
+    height: 58px;
+    /* padding: 0px 32px; */
     border: 1px solid #14CA65;
+    box-sizing: border-box;
     border-radius: 50px;
     display: flex; 
     position: relative;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .search-bar > input{
-    width: 700px;
-    height: 58px;
+    width: 480px;
+    height: 50px;
     border: none;
-    font-size: 32px;
+    font-size: 20px;
     outline: none;
     font-weight: bold;
-    margin-left: 16px;
+    /* margin-left: 16px; */
     margin-right: 50px;
+    padding: 0 0;
 }
 
-.search-bar > .logo{
+.search-bar > a:nth-of-type(1){
     display: block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 17px 16px 17px 27px;
+}
+
+.search-bar .logo{
     background: url('../img/naver-clone/sprite.png') no-repeat -776px -250px;
 	width: 48px;
 	height: 48px;
+    transform: scale(0.5);
+    transform-origin: top left;
 }
 
-.search-bar > .key-btn{
+.search-bar > a:nth-of-type(2){
     display: block;
+    width: 24px;
+    height: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 22px 3px;
+}
+
+.search-bar .key-btn{
     background: url('../img/naver-clone/sprite.png') no-repeat -480px -540px;
 	width: 48px;
 	height: 28px;
+    transform: scale(0.5);
+    transform-origin: top left;
 }
 
-.search-bar > .history-btn{
+.search-bar > a:nth-of-type(3){
     display: block;
+    width: 10px;
+    height: 6px;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 26px 6px;
+}
+
+.search-bar .history-btn{
     background: url('../img/naver-clone/sprite.png') no-repeat -287px -353px;
 	width: 16px;
 	height: 10px;
-    margin-left: 16px;
-    margin-right: 16px;
+    transform: scale(0.625, 0.6);
+    transform-origin: top left;
 }
 
-.search-bar > .search-icon{
+.search-bar > a:nth-of-type(4){
     display: block;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 17px 27px 16px 10px;
+}
+
+.search-bar .search-icon{
     background: url('../img/naver-clone/sprite.png') no-repeat -673px -668px;
 	width: 49px;
 	height: 48px;
+    transform: scale(0.510, 0.520);
+    transform-origin: top left;
 }
 
 .nav-category-box{
     display: flex;
-    width: 1000px;
-    height: 70px;
+    width: 676px;
+    height: 68px;
     margin-top: 16px;
     justify-content: space-between;
 }
 
-.nav-category > a{
+.nav-category > .icon-wrap{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 64px;
+    height: 68px;
+    overflow: hidden;
     text-decoration: none;
     color: #222;
-    gap: 8px;
 }
 
 .nav-category p{
-    font-size: 18px;
+    font-size: 14px;
+}
+
+.mail-icon-wrap{
+    display: block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
 }
 
 .nav-category .mail-icon{
-    display: block;
     background: url('../img/naver-clone/sprite.png') no-repeat -450px -726px;
 	width: 48px;
 	height: 48px;
+    transform: scale(0.833);
+    transform-origin: top left;
 }
 
 .nav-category .cafe-icon{
